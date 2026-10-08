@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CampusCompanion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Campus Companion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyD-iA-CJ3">
+                                <rect key="frame" x="64" y="114" width="265.33333333333331" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your Campus, In Your Pocket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNv-d7-3Zn">
+                                <rect key="frame" x="64" y="156" width="265.33333333333331" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZK-07-n3e">
+                                <rect key="frame" x="120" y="217" width="152.33333333333337" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="N4p-zm-ZOH"/>
+                                    <constraint firstAttribute="height" constant="150" id="xZi-dH-aHx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rui-Ow-sFg">
+                                <rect key="frame" x="140" y="390" width="112" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Started"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rui-Ow-sFg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0gu-Dz-T3Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GyD-iA-CJ3" secondAttribute="trailing" constant="20" id="3ak-13-6xV"/>
+                            <constraint firstItem="TNv-d7-3Zn" firstAttribute="top" secondItem="GyD-iA-CJ3" secondAttribute="bottom" constant="8" id="9hd-4F-KCl"/>
+                            <constraint firstItem="TNv-d7-3Zn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" id="GoQ-th-vnN"/>
+                            <constraint firstItem="TNv-d7-3Zn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IsE-DK-L9K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TNv-d7-3Zn" secondAttribute="trailing" constant="20" id="MOu-Cn-IVp"/>
+                            <constraint firstItem="rui-Ow-sFg" firstAttribute="top" secondItem="CZK-07-n3e" secondAttribute="bottom" constant="29" id="Oua-Qv-eu6"/>
+                            <constraint firstItem="GyD-iA-CJ3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="XAx-UF-xmT"/>
+                            <constraint firstItem="CZK-07-n3e" firstAttribute="top" secondItem="TNv-d7-3Zn" secondAttribute="bottom" constant="40" id="a7T-y5-jrx"/>
+                            <constraint firstItem="GyD-iA-CJ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kz3-kc-Tex"/>
+                            <constraint firstItem="rui-Ow-sFg" firstAttribute="top" secondItem="CZK-07-n3e" secondAttribute="bottom" constant="24" id="nAX-0q-HLz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CZK-07-n3e" secondAttribute="trailing" constant="77" id="pOt-cj-89P"/>
+                            <constraint firstItem="CZK-07-n3e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="s9d-SN-VIN"/>
+                            <constraint firstItem="TNv-d7-3Zn" firstAttribute="top" secondItem="GyD-iA-CJ3" secondAttribute="bottom" constant="8" id="tgZ-3h-v2m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="GyD-iA-CJ3" id="pwF-3V-Skz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
